@@ -1,0 +1,82 @@
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(211, 211, 211);
+   
+}
+main{
+   
+    width: 40%;
+   padding: 0 1rem;
+   
+}
+form{
+    margin: 0 0 .8rem 0;
+    text-align: center;
+}
+input[type="text"]{
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+   padding: .4rem 0;
+   text-align: center;
+   border-radius: 10px;
+   border: none;
+   outline: none;
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+    width: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.6vw;
+    color: white;
+    border-radius: 100%;
+    background: rgb(13, 72, 112) ;
+    border: none;
+}
+.container{
+    /* border: 2px solid white; */
+  border-radius: 10px;
+    font-weight:900;
+    font-size: 2vw;
+    padding: .7rem 0;
+    box-shadow: 0 0 10px black;
+    background-image: url(back.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    /* display: none; */
+    
+}
+.show{
+    display: block;
+}
+.img{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+span{
+    font-size: 1vw;
+}
+.other{
+    display: flex;
+    justify-content: space-evenly;
+}
+::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+@media only screen and (max-width:600px) {
+    ::placeholder{
+        font-size: 2vw;
+    }
+
+}

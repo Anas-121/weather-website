@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Weather</title>
+</head>
+<body>
+    <main>
+        <form action="/" method="POST">
+            <input type="text" name="city" placeholder="Enter your city here.." autocomplete="off">
+            <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+           <div class="container">
+               <p class="place"><%= city %>,<%= cntry %></p>
+               <div class="img">
+                  <img src="<%= image  %>" alt="">
+               </div>
+               <p class="temp"><%= temperature %><sup>&degC</sup></p>
+               <p class="weather"><%= weatherCond %></p>
+               <p class="mintemp">Min-Temp : <%=minTemp %><sup>&deg</sup></p>
+               <p class="maxtemp">Max-Temp : <%=maxTemp %><sup>&deg</sup></p>
+               <div class="other">
+                   <div class="humid"><%=humidity %>% <br>Humidity</div>
+                   <div class="wind"><%=speed %> <span>km/hr</span> <br>Wind</div>
+               </div>
+           </div>
+    </main>
+  <!-- <script>
+      document.querySelector("button").addEventListener('click',e=>{
+e.preventDefault();
+document.querySelector(".container").classList.toggle("show");
+      })
+  </script> -->
+</body>
+</html>
